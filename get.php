@@ -5,21 +5,6 @@
 </head>
 <body>
     
-	<?php
-		if(isset($_GET['submit'])) {
-			$naam = $_GET['naam'];
-			$achternaam = $_GET['achternaam'];
-			$leeftijd = $_GET['leeftijd'];
-			$adres = $_GET['adres'];
-			$email = $_GET['email'];
-
-			echo "<p>Naam: $naam</p>";
-			echo "<p>Achternaam: $achternaam</p>";
-			echo "<p>Leeftijd: $leeftijd</p>";
-			echo "<p>Adres: $adres</p>";
-			echo "<p>Email: $email</p>";
-		}
-	?>
 	<form method="get">
 		<label for="naam">Naam:</label>
 		<input type="text" name="naam" id="naam"><br>
@@ -38,5 +23,21 @@
 
 		<input type="submit" name="submit" value="Verzenden">
 	</form>
+	<?php
+		if(isset($_GET['submit'])) {
+			$naam = $_GET['naam'];
+			$achternaam = $_GET['achternaam'];
+			$leeftijd = $_GET['leeftijd'];
+			$adres = $_GET['adres'];
+			$email = $_GET['email'];
+
+			echo "<p>Naam: $naam</p>";
+			echo "<p>Achternaam: $achternaam</p>";
+			echo "<p>Leeftijd: $leeftijd</p>";
+			echo "<p>Adres: $adres</p>";
+			echo "<p>Email: $email</p>";
+		}
+	?>
 </body>
 </html>
+<!-- Het verschil tussen de POST en GET methode is dat bij POST de data in de body van het HTTP request wordt verzonden en bij GET in de URL. -->
