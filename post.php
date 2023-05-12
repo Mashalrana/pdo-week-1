@@ -30,3 +30,4 @@
 		<input type="text" name="leeftijd" id="leeftijd"><br>
     </form>
 		<label>
+			<!-- Het verschil tussen de POST en GET methode is dat bij POST de data in de body van het HTTP request wordt verzonden en bij GET in de URL. -->
