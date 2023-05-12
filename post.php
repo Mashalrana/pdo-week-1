@@ -34,8 +34,9 @@
 			echo "<p>Leeftijd: $leeftijd</p>";
 			echo "<p>Adres: $adres</p>";
 			echo "<p>Email: $email</p>";
-		}
+	}
 	?>
+			<!-- Het verschil tussen de POST en GET methode is dat bij POST de data in de body van het HTTP request wordt verzonden en bij GET in de URL. -->
 				
 </body>
 </html>
